@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    background: #007acc;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  section {
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #options {
+    margin-top: 30px;
+    background: #e6f7ff;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .option-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .option-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #007acc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  
+  .option-card:hover {
+    background-color: #007acc;
+    color: white;
+  }
+  
+  #calculator {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f4f4f4; /* Light background for the calculator section */
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Ensure it takes up some space */
+    display: block;
+  }
+  
+  .calc-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  #calc-display {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .calc-buttons button {
+    padding: 15px;
+    font-size: 18px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .calc-buttons button:hover {
+    background: #005f99;
+  }
+  
+  .clear-btn {
+    grid-column: span 4;
+    background: #ff4444;
+  }
+  
+  /* Smooth scrolling effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  #library ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #library ul ul {
+    margin-left: 20px;
+  }
+  
+  #library li {
+    margin-bottom: 10px;
+  }
+  
+  #library a {
+    font-size: 18px;
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  #library a:hover {
+    color: #005f99;
+    text-decoration: underline;
+  }
+  #grammar textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #grammar button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #grammar button:hover {
+    background-color: #005f99;
+  }
+  #answer-helper textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #answer-helper button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #answer-helper button:hover {
+    background-color: #218838;
+  }
+  /* Modal Container */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top, centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* Close Button (X) */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Optional: Style Login Button */
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background-color: #005f99;
+  }
+  
+  /* Style the inputs in modal */
+  .modal-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  
